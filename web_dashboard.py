@@ -553,6 +553,9 @@ HTML_TEMPLATE = """
 """
 
 @app.route("/")
+@app.route("/api/index.py")
+@app.route("/api/index")
+@app.route("/api")
 def index():
     return render_template_string(HTML_TEMPLATE)
 
